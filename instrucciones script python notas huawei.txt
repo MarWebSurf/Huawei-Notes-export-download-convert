@@ -1,0 +1,62 @@
+Requerimientos e Instrucciones para Ejecutar el Script en una Computadora instalando Python desde cero
+
+Lista con todos los pasos necesarios para preparar una computadora desde cero y ejecutar el script sin necesidad de tener previamente instalado Python o ChromeDriver.
+
+
+Requerimientos
+Sistema Operativo: Windows, macOS o Linux.
+Acceso a Internet: Para descargar los instaladores de Python y ChromeDriver.
+Espacio en Disco: Asegúrate de tener suficiente espacio en disco para instalar las aplicaciones.
+Instrucciones Paso a Paso
+Descargar e Instalar Python:
+
+Visita la página oficial de Python.
+Descarga la última versión de Python para tu sistema operativo.
+Durante la instalación, asegúrate de marcar la opción "Add Python to PATH" (Agregar Python al PATH).
+Completa la instalación siguiendo las instrucciones del instalador.
+
+Verificar la Instalación de Python:	
+Abre la línea de comandos (CMD en Windows o Terminal en macOS/Linux).
+Escribe py --version y presiona Enter. Deberías ver la versión de Python instalada.
+
+Instalar Selenium:
+En la misma ventana de línea de comandos, ejecuta el siguiente comando para instalar Selenium:
+
+pip install selenium
+
+Descarga tu copia de block de notas de la nube de Huawei: 
+1 Inicia sesión en una cuenta de Huawei en el teléfono.
+2 Activa en tu teléfono la sincronización de Notas, que se encuentra dentro de Cuenta Huawei > Nube.
+3 Inicia sesión en https://cloud.huawei.com.
+4 Ve a https://cloud.huawei.com/home#/account/gdpr y haz clic en Descargar Notas.
+5 Esto te dará un archivo zip con una contraseña. Extrae el archivo zip en una carpeta.
+6 Extrae ese archivo y navega hasta la carpeta Notes que contiene muchas subcarpetas nombradas con numeros que son las que contienen los archivos con cada nota, cada subcarpeta tiene un archivo .html y un archivo.js) 
+7 En esa carpeta Notes debes copiar el archivo Chromedrive.exe que se explica a continuacion y el archivo del script que descargas de Github SCRIPT_Block_de_Notas_HUAWEI_A_TXT.py
+
+Descargar ChromeDriver:
+Asegúrate de que Chrome está instalado en tu computadora. Puedes descargarlo desde aquí.
+Verifica la versión de Chrome que tienes instalada (Ayuda -> Acerca de Google Chrome).
+Descarga la versión correspondiente de ChromeDriver desde https://developer.chrome.com/docs/chromedriver/downloads?hl=es-419
+Extrae el archivo chromedriver.exe y colocalo en la misma carpeta donde estará tu script de Python.
+
+
+Ejecutar el Script:
+
+Abrir la línea de comandos y navega a la carpeta donde guardaste el script utilizando el comando cd. (en windows si clickeas en la barra de direcciones borra el texto y escribi cmd, eso abre la linea de comandos directamente en la carpeta donde estas ubicado)
+Si no tambien podes: 
+tecla windows>escribi cmd>Enter
+
+cd ruta\a\la\carpeta    (coloca la ruta donde hayas extraido el .zip, donde se encuentre la carpeta Notes que explique antes)
+
+Ejecuta el script utilizando el siguiente comando:
+
+
+py SCRIPT_Block_de_Notas_HUAWEI_A_TXT.py
+
+Verificar los Resultados:
+
+Después de ejecutar el script, revisa la carpeta donde está el script. Deberías ver una subcarpeta llamada txt_output con los archivos .txt generados a partir de los archivos HTML.
+Notas Adicionales
+Revisar Compatibilidad: Asegúrate de que la versión de ChromeDriver que descargaste sea compatible con la versión de Google Chrome que tienes instalada.
+Permisos: Si experimentas problemas de permisos, asegúrate de que tienes los derechos necesarios para crear archivos y carpetas en el directorio donde ejecutas el script.
+Siguiendo estos pasos, deberías poder ejecutar el script en cualquier computadora sin Python o ChromeDriver previamente instalados. 
